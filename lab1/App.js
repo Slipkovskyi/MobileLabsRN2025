@@ -1,4 +1,3 @@
-import {StatusBar} from 'expo-status-bar';
 import {StyleSheet, Text, View, Image} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
@@ -13,7 +12,6 @@ export default function App() {
     return (
         <NavigationContainer>
             <View style={styles.container}>
-                {/*<StatusBar style="auto"/>*/}
                     <View style={styles.header}>
                         <Image
                             source={{uri: 'https://ztu.edu.ua/img/logo/university-colored.png'}}
@@ -27,7 +25,6 @@ export default function App() {
                         tabBarActiveTintColor: '#0048ff',
                         tabBarInactiveTintColor: 'gray',
                         headerShown: false,
-                        // tabBarShowLabel: false,
                     }}>
                         <Tab.Screen name="Головна" component={HomeScreen} options={{
                             tabBarIcon: ({color, size}) => (
