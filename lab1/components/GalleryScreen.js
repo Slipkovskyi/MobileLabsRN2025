@@ -6,7 +6,7 @@ const GalleryScreen = () => {
     const [images, setImages] = useState([]);
 
     const getImages = () => {
-        axios.get('https://raw.githubusercontent.com/Slipkovskyi/MobileLabsRN2025/main/images.json').then((response) => {
+        axios.get('https://raw.githubusercontent.com/Slipkovskyi/MobileDataLab1RN2025/refs/heads/main/images.json').then((response) => {
             console.log(response.data);
             setImages(() => response.data)
         });

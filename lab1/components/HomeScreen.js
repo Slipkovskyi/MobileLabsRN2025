@@ -1,4 +1,4 @@
-import {StyleSheet, Text, View, Image, Button, ScrollView} from 'react-native';
+import {StyleSheet, Text, View, Image, ScrollView} from 'react-native';
 import {useEffect, useState} from "react";
 import axios from "axios";
 
@@ -6,7 +6,7 @@ const HomeScreen = () => {
     const [news, setNews] = useState([]);
 
     const getNews = () => {
-        axios.get('https://raw.githubusercontent.com/Slipkovskyi/MobileLabsRN2025/main/news.json').then((response) => {
+        axios.get('https://raw.githubusercontent.com/Slipkovskyi/MobileDataLab1RN2025/refs/heads/main/news.json').then((response) => {
             console.log(response.data);
             setNews(() => response.data)
         });
@@ -48,7 +48,7 @@ const styles = StyleSheet.create({
     title: {
         textAlign: "center",
         fontWeight: "500",
-        fontSize: 20,
+        fontSize: 24,
     },
     newsContainer: {
         marginTop: 10
