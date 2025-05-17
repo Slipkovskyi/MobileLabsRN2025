@@ -1,3 +1,6 @@
+import {ThemeName} from "@/constants";
+import "styled-components/native";
+
 type Hex = `#${string}`
 
 export type AppTheme = {
@@ -11,4 +14,10 @@ export type AppTheme = {
     success: Hex
     info: Hex
     special: Hex
+}
+
+export type AppThemeName = ThemeName.Dark | ThemeName.Light
+
+export interface StyledThemeProps {
+    theme: AppTheme
 }
