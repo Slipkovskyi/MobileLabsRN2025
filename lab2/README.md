@@ -1,50 +1,61 @@
-# Welcome to your Expo app 👋
+# Лабораторна робота №2 з дисципліни "Розробка мобільних застосунків"
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## Виконав: студент групи ІПЗк-23-1 Сліпковський Ілля
 
-## Get started
+**Тема:** Стилізація компонентів у React Native, списки, темізація
 
-1. Install dependencies
+---
 
+### Основні реалізації
+
+- Використані **styled-components** для створення компонентів із підтримкою темізації (світла/темна тема) за допомогою `ThemeProvider`.
+- Навігація між екранами реалізована через **React Navigation**.
+- Для відображення списків (Store, Community, Chat) застосовано **FlatList** з механізмом **infinite scroll**.
+- Збережено модульність: повторні елементи (GameCard, NewsItem, ChatItem тощо) винесені у папку `components/`.
+- UI відтворений у стилі Steam згідно макетів у Figma:  
+  https://www.figma.com/design/MqvgyshAGqymGnxhsutXGE/App-Concept?node-id=0-1&t=qOOOHpmK9B8c2ZHQ-1
+- Реалізовано п’ять екранів: Store, Community, Chat, Safety, Профіль користувача.
+
+---
+
+### Інструкція з запуску
+
+1. **Клонувати репозиторій**  
+   ```bash
+   git clone https://github.com/Slipkovskyi/MobileLabsRN2025.git
+   cd MobileLabsRN2025
+   cd lab2
+   ```
+2. **Встановити залежності**  
    ```bash
    npm install
    ```
-
-2. Start the app
-
+3. **Запустити додаток**  
    ```bash
-    npx expo start
+   expo start
    ```
+4. **Відкриття на пристрої**  
+   - Скачайте **Expo Go** на смартфон.  
+   - Скануйте QR-код, що з’явиться в терміналі.
 
-In the output, you'll find options to open the app in a
+---
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+### Скриншоти роботи додатку
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+#### Store  
+![store_screen](assets/images/store_screen.png)
 
-## Get a fresh project
+#### Community  
+![community_screen](assets/images/community_screen.png)
 
-When you're ready, run:
+#### Chat  
+![chat_screen](assets/images/chat_screen.png)
 
-```bash
-npm run reset-project
-```
+#### Safety  
+![safety_screen](assets/images/safety_screen.png)
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+#### Profile  
+![profile_screen](assets/images/profile_screen.png)
 
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+### White theme
+![white_theme_screen](assets/images/white_theme_screen.png)
