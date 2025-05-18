@@ -1,50 +1,57 @@
-# Welcome to your Expo app 👋
+# Лабораторна робота №3 з дисципліни "Розробка мобільних застосунків"
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## Виконав: студент групи ІПЗк-23-1 Сліпковський Ілля
 
-## Get started
+**Тема:** Використання жестів у React Native за допомогою `react-native-gesture-handler`
 
-1. Install dependencies
+---
 
+### Основні реалізації
+
+- На головному екрані реалізовано гру-клікер з лічильником очок.
+- Використані різні Gesture Handlers із бібліотеки **react-native-gesture-handler**:
+  - `TapGestureHandler` — одиночне натискання для +1 очка і подвійний тап для подвоєння очок.  
+  - `LongPressGestureHandler` — утримання натискання для бонусних очок.  
+  - `PanGestureHandler` — перетягування об’єкта по екрану.  
+  - `FlingGestureHandler` — свайп вліво/вправо для випадкових бонусів.  
+  - `PinchGestureHandler` — масштабування об’єкта для додаткових бонусів.
+
+- Екран "Завдання" із переліком 10 завдань, реалізований через **FlatList** з відображенням статусу виконання.
+
+- Навігація між екранами (Головна ↔ Завдання) побудована з використанням **@react-navigation/native**.
+
+- Модульність: повторні UI-елементи (TaskItem, GameButton тощо) винесені у папку `components/`.
+
+---
+
+### Інструкція з запуску
+
+1. **Клонувати репозиторій**  
+   ```bash
+   git clone https://github.com/Slipkovskyi/MobileLabsRN2025.git
+   cd MobileLabsRN2025/lab3
+   ```
+
+2. **Встановити залежності**  
    ```bash
    npm install
    ```
 
-2. Start the app
-
+3. **Запустити сервер**  
    ```bash
-    npx expo start
+   expo start
    ```
 
-In the output, you'll find options to open the app in a
+4. **Відкрити приложен�� на пристрої**  
+   - Встановіть **Expo Go** на смартфон.  
+   - Скануйте QR-код, що з’явиться в терміналі.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+---
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+### Скриншоти роботи додатку
 
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+![screenshot1](assets/screenshot1.png)
+![screenshot2](assets/screenshot2.png)
+![screenshot3](assets/screenshot3.png)
+![screenshot4](assets/screenshot4.png)
+![screenshot5](assets/screenshot5.png)
